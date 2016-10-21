@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  margin:0; 
+  padding:0px;
+}
+
+button {
+  background-color: #0068FF;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+}
+
+button:hover, button:active {
+  color: #FAF000;
+}
+
+button:active {
+  font-size: 11px;
+}
+.label {
+  color: #0D2A4D;
+  position: absolute;
+  margin-left: 10px;
+  top: 35px;
+}
+
+body{
+  margin:0px;
+}
+
+#ad{
+   display: block;
+   overflow:hidden;
+   width: 300px;
+   height: 250px;
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#banner{
+  position:absolute;
+  display: block;
+  width: 300px;
+  height: 250px;
+  background-color: #000;
+  /*background-image:url(images/logo.png);
+  background-position: 10px 10px;
+  background-repeat:no-repeat;
+  overflow: hidden;*/
+
+}
+.buttons {
+  /*position: absolute;
+  bottom: 10px;
+  right: 10px;*/
+}
+
+.button {
+  height: 26px;
+  width: 108px;
+}
+
+
+
+.collapsed .buttons {
+	bottom: 30px;
+	left: 10px;
+}
+
+#banner {
+	background-size: auto 20px;
+}
+
+.video-container {
+  width: 298px;
+  height: 169px;
+}
+
+.frame {
+  width: 298px;
+  height: 248px;
+  background-image: url(images/frame.png);
+  border: rgb(144,144,144) 1px solid;
+}
+
+/*.logo {
+  position: absolute;
+  width: 300px;
+  height: 29px;
+  left: 0px;
+  top: 223px;
+  display: none;
+  background-image:url(images/logo.png);
+}*/
+.logo {
+  position: absolute;
+  width: 137px;
+  height: 89px;
+  left: 168px;
+  top: -39px;
+  background-image: url(images/logo.png);
+}
+
+.centered {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 169px;
+  width: 298px;
+}
+
+.diy-slideshow{
+  position: absolute;
+  display: block;
+  /* overflow: hidden; */
+  height: 250px;
+  width: 300px;
+  left: -40px;
+  top: -15px;
+  
+}
+figure{
+  position: absolute;
+  opacity: 0;
+  transition: 1s opacity;
+  height: 250px;
+  width: 300px;
+}
+
+figure.show{
+  opacity: 1;
+  position: static;
+  transition: 1s opacity;
+}
+
+#ssbg{
+  position:absolute;
+  display: block;
+  width: 300px;
+  height: 250px;
+  background-image:url(images/ssbg.jpg);
+}
+
+#btn{
+  position:absolute;
+  display: block;
+  width: 298px;
+  height: 247px;
+  top: 1px;
+  left: 0px;
+  background-image:url(images/btn.png);
+  border: rgb(144,144,144) 1px solid;
+}

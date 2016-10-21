@@ -1,0 +1,163 @@
+body, html {
+margin: 0;
+padding: 0;
+    }
+.panel1 {
+padding: 20px 10px;
+font-size: 18px;
+color: #e0e0e0;
+background-color: rgba(2, 13, 32, 0.9);
+	}
+.panel2 {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+.panel2-heading {
+    text-align: left;
+    font-size: 19px;
+    color: #dff0d8;
+}
+video {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 0;
+background: transparent;
+visibility: initial;
+    }
+.overlay-desc {
+    background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(2, 13, 32,0.5), rgba(2, 13, 32, 1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(2, 13, 32,0.5), rgba(2, 13, 32, 1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(2, 13, 32,0.5), rgba(2, 13, 32, 1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(2, 13, 32,0.5), rgba(2, 13, 32, 1)); /* Standard syntax (must be last) */
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 118%;
+}
+.socials {
+    height: auto;
+    width: auto;
+    max-width: 30px;
+    max-height: 30px;
+    }
+.slika {
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+    opacity: 0.8;
+    }
+.map {
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 360px;
+    }
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.collapsing {
+    background-color: white;
+  }
+
+
+.block-menu {
+	display: block;
+    float: right;
+    padding-left: 0px;
+}
+
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	display: block;
+	text-decoration: none;
+
+	font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+    font-size: 1.5vw;
+	line-height: 20px;
+	padding: 15px 10px;
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:rgba(2, 13, 32, 0.25);
+	padding: 15px 10px;
+	color: #afafaf;
+	pointer-events: none;
+	box-sizing: border-box;
+    box-shadow: inset 0px -10px 20px #020d20;
+}

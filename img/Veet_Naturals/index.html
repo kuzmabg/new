@@ -1,0 +1,156 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<title>HTML5 Rich Banner: 300x250 (Video)</title>
+<link rel="stylesheet" href="style.css"/> 
+<script>EBModulesToLoad = ['Video'];</script>
+<script type="text/javascript"  src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"</script>
+<script type="text/javascript" src="scripts/rich_banner.js"></script>
+<script type="text/javascript">
+	var video;
+	//var frame = document.getElementById("frame");
+	function initEB(){
+		if (!EB.isInitialized()) {
+			EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
+		}
+		else {
+			startAd();
+		}
+	}
+	
+	function startAd() {
+		document.getElementById("banner").style.visibility = "visible";
+		video = document.getElementById("video");
+		initVideo();
+		EB.automaticEventCounter("Ad_Start");
+		video.addEventListener("play", handlePlayButtonClick);
+		video.addEventListener("pause", handlePauseButtonClick);
+		video.addEventListener("volumechange", handleVolumeChangeButtonClick);
+		//document.getElementById("video").addEventListener("click", handleClickthroughButtonClick);
+		//document.getElementById("logo").addEventListener("click", handleClickthroughLogoClick);
+		document.getElementById("buynowct").addEventListener("click", handleClickthroughBuyNowClick);
+		//document.getElementById("retail").addEventListener("click", handleClickthroughRetailClick);
+
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+if(isMobile.any()){
+    // Mobile!
+} else {
+    video.muted=true;
+}
+		}
+	
+
+	function initVideo() {
+		var videoTrackingModule = new EBG.VideoModule(video);
+		video.play();
+		//video.volume = 0;
+	}
+	
+	function handleClickthroughButtonClick() {
+		//EB.clickthrough('Preroll_Frame_X_X_Site_CT');
+		EB.clickthrough('Preroll_MainVideo_X_X_Site_CT');
+		video.pause(true);
+	}
+
+	function handleClickthroughLogoClick() {
+		//EB.clickthrough('Preroll_Frame_Button_X_Logo_CT');
+		video.pause(true);
+	}
+
+	function handleClickthroughBuyNowClick() {
+		//EB.clickthrough('Preroll_Frame_Button_X_BuyNow_CT');
+		video.pause(true);
+	}
+
+	function handleClickthroughRetailClick() {
+		//EB.clickthrough('Preroll_Frame_Button_X_Retail_CT');
+		video.pause(true);
+	}
+
+
+	function handlePauseButtonClick() {
+		EB.automaticEventCounter('Preroll_MainVideo_PlayerControl_X_Pause_Engagement');
+		//console.log("pause");
+	}
+
+	function handlePlayButtonClick() {
+		EB.automaticEventCounter('Preroll_MainVideo_PlayerControl_X_Play_Engagement');
+		//console.log("play");
+
+	}
+
+	function handleVolumeChangeButtonClick(){
+		if(video.muted){
+			EB.automaticEventCounter('Preroll_MainVideo_PlayerControl_X_Mute_Engagement');
+		} else {
+			EB.automaticEventCounter('Preroll_MainVideo_PlayerControl_X_UnMute_Engagement');
+		}
+	}
+
+	function handleMuteButtonClick() {
+		//EB.automaticEventCounter('Preroll_MainVideo_PlayerControl_X_Mute_Engagement');
+	    //console.log("mute");
+		}
+	// function handleUnMuteButtonClick() {
+	// 	video.volume = 1;
+	// 	EB.automaticEventCounter('Preroll_MainVideo_PlayerControl_X_UnMute_Engagement');
+	// }
+
+	function handleReplayButtonClick() {
+		//video.load();
+		//video.play();
+		//video.volume = 1;
+		EB.automaticEventCounter('Preroll_MainVideo_PlayerControl_X_Replay_Engagement');
+	}
+	function ShowReplay(obj){
+	//console.log("end");
+	}
+
+
+
+
+</script>
+
+</head> 
+<body onload="initEB();"> 
+	<div id="ad" class="centered">
+		<div id="banner">
+			<div id="videoContainer" class="video-container centered">
+				<video id="video" controls="true" poster="images/poster.jpg" webkit-playsinline>
+					<source src="videos/video.mp4" type="video/mp4">
+					<source src="videos/video.webm" type="video/webm">
+					Your browser does not support the <code>video</code> element.
+				</video>
+			</div>
+			<!--<div id ="frame" class="frame"></div>
+			<div id ="logo" class="logo"></div>-->
+			<div id ="buynowct" class="buynowct"></div>
+			<!--<div id ="retail" class="retail"></div>-->
+			</div>
+			
+		</div>
+
+	</div>
+</body> 
+</html>

@@ -1,0 +1,517 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* Default style, feel free to remove if not needed. */
+body, body * {
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#doubleclick_logo_dc{
+	position:absolute;
+	top: 4px;
+	left: 4px;	
+}
+#overlay {
+	position: absolute;
+	background-image: url('overlay.png');
+	top: 0px;
+	left: 0px;
+}
+#panel {
+	position: absolute;
+	background-image: url('overlay.png');
+	top: 0px;
+	left: 0px;	
+}
+/* Div layer for the entire banner. */
+#container_dc {
+	position: absolute;
+	width: 300px;
+	height: 600px;
+	border:1px solid #666666;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#content_dc {
+	position: absolute;
+	width: 900px;
+	height: 100%;
+	background-image: url('1.jpg');
+	background-repeat: no-repeat;
+	animation-name: anim;
+    animation-duration: 15s;
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes anim {
+	0%   {top: 0px; left: 0px;}
+	100% {top: 0px; left: -600px;}
+}	
+@-moz-keyframes anim {
+	0%   {top: 0px; left: 0px;}
+	100% {top: 0px; left: -600px;}
+}
+@-o-keyframes anim {
+	0%   {top: 0px; left: 0px;}
+	100% {top: 0px; left: -600px;}
+}
+@-ms-keyframes anim {
+	0%   {top: 0px; left: 0px;}
+	100% {top: 0px; left: -600px;}
+}
+@keyframes anim {
+	0%   {top: 0px; left: 0px;}
+	100% {top: 0px; left: -600px;}
+}
+
+#batb {	position: absolute;
+	background-image: url('batb.png');
+    animation-name: batb;
+    animation-duration: 15s;
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	}
+
+@-webkit-keyframes batb {
+	0%   {top: 1000px; left: 0px;}
+	2% {top: -20px; left: 0px;}
+	4% {top: 0px; left: 0px;}
+	14% {top: 0px; left: 0px;}
+	15% {top: 1000px; left: 0px;}
+	100% {top: 1000px; left: 0px;}
+}	
+@-moz-keyframes batb {
+	0%   {top: 1000px; left: 0px;}
+	2% {top: -20px; left: 0px;}
+	4% {top: 0px; left: 0px;}
+	14% {top: 0px; left: 0px;}
+	15% {top: 1000px; left: 0px;}
+	100% {top: 1000px; left: 0px;}
+}
+@-o-keyframes batb {
+	0%   {top: 1000px; left: 0px;}
+	2% {top: -20px; left: 0px;}
+	4% {top: 0px; left: 0px;}
+	14% {top: 0px; left: 0px;}
+	15% {top: 1000px; left: 0px;}
+	100% {top: 1000px; left: 0px;}
+}
+@-ms-keyframes batb {
+	0%   {top: 1000px; left: 0px;}
+	2% {top: -20px; left: 0px;}
+	4% {top: 0px; left: 0px;}
+	14% {top: 0px; left: 0px;}
+	15% {top: 1000px; left: 0px;}
+	100% {top: 1000px; left: 0px;}
+}
+@keyframes batb {
+	0%   {top: 1000px; left: 0px;}
+	2% {top: -20px; left: 0px;}
+	4% {top: 0px; left: 0px;}
+	14% {top: 0px; left: 0px;}
+	15% {top: 1000px; left: 0px;}
+	100% {top: 1000px; left: 0px;}
+}
+
+#lw {	position: absolute;
+	background-image: url('lw.png');
+    animation-name: lw;
+    animation-duration: 15s;
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	}
+@-webkit-keyframes lw {
+	0%  {top: 10000px; left: 0px;}
+	20% {top: 10000px; left: 0px;}
+	22% {top: -20px; left: 0px;}
+	24% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100%{top: 10000px; left: 0px;}
+}
+@-moz-keyframes lw {
+	0%  {top: 10000px; left: 0px;}
+	20% {top: 10000px; left: 0px;}
+	22% {top: -20px; left: 0px;}
+	24% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100%{top: 10000px; left: 0px;}
+}
+@-o-keyframes lw {
+	0%  {top: 10000px; left: 0px;}
+	20% {top: 10000px; left: 0px;}
+	22% {top: -20px; left: 0px;}
+	24% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100%{top: 10000px; left: 0px;}
+}
+@-ms-keyframes lw {
+	0%  {top: 10000px; left: 0px;}
+	20% {top: 10000px; left: 0px;}
+	22% {top: -20px; left: 0px;}
+	24% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100%{top: 10000px; left: 0px;}
+}
+@keyframes lw {
+	0%  {top: 10000px; left: 0px;}
+	20% {top: 10000px; left: 0px;}
+	22% {top: -20px; left: 0px;}
+	24% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100%{top: 10000px; left: 0px;}
+}
+	
+	#eh {	position: absolute;
+	background-image: url('eh.png');
+    animation-name: eh;
+    animation-duration: 15s;
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	}
+@-webkit-keyframes eh {
+	0%  {top: 10000px; left: 0px;}
+	23% {top: 10000px; left: 0px;}
+	25% {top: -20px; left: 0px;}
+	27% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-moz-keyframes eh {
+	0%  {top: 10000px; left: 0px;}
+	23% {top: 10000px; left: 0px;}
+	25% {top: -20px; left: 0px;}
+	27% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-o-keyframes eh {
+	0%  {top: 10000px; left: 0px;}
+	23% {top: 10000px; left: 0px;}
+	25% {top: -20px; left: 0px;}
+	27% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-ms-keyframes eh {
+	0%  {top: 10000px; left: 0px;}
+	23% {top: 10000px; left: 0px;}
+	25% {top: -20px; left: 0px;}
+	27% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@keyframes eh {
+	0%  {top: 10000px; left: 0px;}
+	23% {top: 10000px; left: 0px;}
+	25% {top: -20px; left: 0px;}
+	27% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+	#gf {	position: absolute;
+	background-image: url('gf.png');
+    animation-name: gf;
+    animation-duration: 15s;
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	}
+@-webkit-keyframes gf {
+	0%  {top: 10000px; left: 0px;}
+	26% {top: 10000px; left: 0px;}
+	28% {top: -20px; left: 0px;}
+	30% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-moz-keyframes gf {
+	0%  {top: 10000px; left: 0px;}
+	26% {top: 10000px; left: 0px;}
+	28% {top: -20px; left: 0px;}
+	30% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-o-keyframes gf {
+	0%  {top: 10000px; left: 0px;}
+	26% {top: 10000px; left: 0px;}
+	28% {top: -20px; left: 0px;}
+	30% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-ms-keyframes gf {
+	0%  {top: 10000px; left: 0px;}
+	26% {top: 10000px; left: 0px;}
+	28% {top: -20px; left: 0px;}
+	30% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@keyframes gf {
+	0%  {top: 10000px; left: 0px;}
+	26% {top: 10000px; left: 0px;}
+	28% {top: -20px; left: 0px;}
+	30% {top: 0px; left: 0px;}
+	47% {top: 0px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+
+	#goal {	position: absolute;
+	background-image: url('goal.png');
+    animation-name: goal;
+    animation-duration: 15s;
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	}
+@-webkit-keyframes goal {
+	0%  {top: 10000px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	50% {top: -20px; left: 0px;}
+	52% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-moz-keyframes goal {
+	0%  {top: 10000px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	50% {top: -20px; left: 0px;}
+	52% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-o-keyframes goal {
+	0%  {top: 10000px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	50% {top: -20px; left: 0px;}
+	52% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-ms-keyframes goal {
+	0%  {top: 10000px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	50% {top: -20px; left: 0px;}
+	52% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@keyframes goal {
+	0%  {top: 10000px; left: 0px;}
+	48% {top: 10000px; left: 0px;}
+	50% {top: -20px; left: 0px;}
+	52% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+
+	#achi {	position: absolute;
+	background-image: url('achi.png');
+    animation-name: achi;
+    animation-duration: 15s;
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	}
+@-webkit-keyframes achi {
+	0%  {top: 10000px; left: 0px;}
+	51% {top: 10000px; left: 0px;}
+	53% {top: -20px; left: 0px;}
+	55% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-moz-keyframes achi {
+	0%  {top: 10000px; left: 0px;}
+	51% {top: 10000px; left: 0px;}
+	53% {top: -20px; left: 0px;}
+	55% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-o-keyframes achi {
+	0%  {top: 10000px; left: 0px;}
+	51% {top: 10000px; left: 0px;}
+	53% {top: -20px; left: 0px;}
+	55% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-ms-keyframes achi {
+	0%  {top: 10000px; left: 0px;}
+	51% {top: 10000px; left: 0px;}
+	53% {top: -20px; left: 0px;}
+	55% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@keyframes achi {
+	0%  {top: 10000px; left: 0px;}
+	51% {top: 10000px; left: 0px;}
+	53% {top: -20px; left: 0px;}
+	55% {top: 0px; left: 0px;}
+	67% {top: 0px; left: 0px;}
+	68% {top: 10000px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+
+	#set {	position: absolute;
+	background-image: url('set.png');
+    animation-name: set;
+    animation-duration: 15s;
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	}
+@-webkit-keyframes set {
+	0%  {top: 10000px; left: 0px;}
+	70% {top: 10000px; left: 0px;}
+	73% {top: -20px; left: 0px;}
+	75% {top: 0px; left: 0px;}
+	99% {top: 0px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-moz-keyframes set {
+	0%  {top: 10000px; left: 0px;}
+	70% {top: 10000px; left: 0px;}
+	73% {top: -20px; left: 0px;}
+	75% {top: 0px; left: 0px;}
+	99% {top: 0px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-o-keyframes set {
+	0%  {top: 10000px; left: 0px;}
+	70% {top: 10000px; left: 0px;}
+	73% {top: -20px; left: 0px;}
+	75% {top: 0px; left: 0px;}
+	99% {top: 0px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@-ms-keyframes set {
+	0%  {top: 10000px; left: 0px;}
+	70% {top: 10000px; left: 0px;}
+	73% {top: -20px; left: 0px;}
+	75% {top: 0px; left: 0px;}
+	99% {top: 0px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+@keyframes set {
+	0%  {top: 10000px; left: 0px;}
+	70% {top: 10000px; left: 0px;}
+	73% {top: -20px; left: 0px;}
+	75% {top: 0px; left: 0px;}
+	99% {top: 0px; left: 0px;}
+	100% {top: 10000px; left: 0px;}
+}
+
+	#arrow {	position: absolute;
+	background-image: url('arrow.png');
+    animation-name: arrow;
+    animation-duration: 15s;
+	animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	}
+@-webkit-keyframes arrow {
+	0%  {opacity: 0;}
+	76% {opacity: 0;}
+	77% {top: 0px; left: 0px;}
+	79% {opacity: 1;}
+	81% {opacity: 0;}
+	83% {opacity: 1;}
+	85% {opacity: 0;}
+	87% {opacity: 1;}
+	89% {opacity: 0;}
+}
+@-moz-keyframes arrow {
+	0%  {opacity: 0;}
+	76% {opacity: 0;}
+	77% {top: 0px; left: 0px;}
+	79% {opacity: 1;}
+	81% {opacity: 0;}
+	83% {opacity: 1;}
+	85% {opacity: 0;}
+	87% {opacity: 1;}
+	89% {opacity: 0;}
+}
+@-o-keyframes arrow {
+	0%  {opacity: 0;}
+	76% {opacity: 0;}
+	77% {top: 0px; left: 0px;}
+	79% {opacity: 1;}
+	81% {opacity: 0;}
+	83% {opacity: 1;}
+	85% {opacity: 0;}
+	87% {opacity: 1;}
+	89% {opacity: 0;}
+}
+@-ms-keyframes arrow {
+	0%  {opacity: 0;}
+	76% {opacity: 0;}
+	77% {top: 0px; left: 0px;}
+	79% {opacity: 1;}
+	81% {opacity: 0;}
+	83% {opacity: 1;}
+	85% {opacity: 0;}
+	87% {opacity: 1;}
+	89% {opacity: 0;}
+}
+@keyframes arrow {
+	0%  {opacity: 0;}
+	76% {opacity: 0;}
+	77% {top: 0px; left: 0px;}
+	79% {opacity: 1;}
+	81% {opacity: 0;}
+	83% {opacity: 1;}
+	85% {opacity: 0;}
+	87% {opacity: 1;}
+	89% {opacity: 0;}
+}
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
